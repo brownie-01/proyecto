@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header section */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.flex-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 50%;
+}
+
+#header .logo {
+  height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+color para despues
+
+background: #885AAA;
+background: -webkit-linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
+background: -moz-linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
+background: linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
+filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr="#885AAA",
+  endColorstr="#C2126C",
+  GradientType=1
+); */
