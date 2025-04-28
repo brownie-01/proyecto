@@ -4,25 +4,33 @@
   box-sizing: border-box;
 }
 /* header section */
-#header {
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  border: 1px solid;
+  align-items: center;
+  border-bottom: 1px solid;
+  height: 60px;
+  padding: 5px 10px;
+
+  position: static;
 }
 
-.flex-item{
+.header .nav-links {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-grow: 50%;
+  gap: 15px;
+  color: black;
 }
 
-#header .logo {
-  height: 70px;
+/* main section */
+
+main #banner {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
+.flex.art
 
 
 
