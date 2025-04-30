@@ -10,6 +10,7 @@ h2 {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration-line: underline;
 }
 
 h3 {
@@ -18,8 +19,16 @@ h3 {
   font-style: normal;
 }
 
+h4 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+}
+
 p {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 7px;
 }
