@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 /* header section */
 .header {
@@ -20,6 +19,9 @@
   list-style: none;
   display: flex;
   gap: 15px;
+}
+
+.header .nav-links li a {
   color: black;
 }
 
@@ -46,17 +48,17 @@ main #banner {
   flex-direction: column;
   height: 300px;
   width: 135px;
-  border: 1px solid;
+  border:  solid;
 
   max-width: 300px;
   max-height: 300px;
   border-radius: 15px;
-  background-color: rgb(179, 178, 174);
+  background-color: #7a9a9b;
 }
 
 .card img {
   flex-grow: 1;
-  margin: 0px;
+  margin: 3px;
   border-radius: 14px 14px 0px 0px;
 }
 
@@ -69,35 +71,56 @@ main #banner {
   margin-top: 101px
 }
 
+/* section-atumm*/
+
+.section-autumm {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+  height: 100vw;
+  max-height: 100vw;
+  background-color: rgb(34, 36, 35);
+}
+
+.section-autumm .left-part {
+  width: 400px;
+  height: auto;
+}
+
+.section-autumm  img {
+  width: 240px;
+}
 
 
+/* section-footer*/
 
+.footer {
+  background-color: black;
+  color: beige;
+  height: 300px;
+}
 
+.footer section {
+  text-align: center;
+  padding: 10px;
+}
 
+.footer section p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
 
+.footer section p > a{
+  color: antiquewhite;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-color para despues
-
-background: #885AAA;
-background: -webkit-linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
-background: -moz-linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
-background: linear-gradient(90deg,rgba(136, 90, 170, 1) 5%, rgba(40, 180, 167, 1) 50%, rgba(194, 18, 108, 1) 95%);
-filter: progid:DXImageTransform.Microsoft.gradient(
-  startColorstr="#885AAA",
-  endColorstr="#C2126C",
-  GradientType=1
-); */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
