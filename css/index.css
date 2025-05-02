@@ -9,8 +9,8 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid;
-  height: 60px;
-  padding: 5px 10px;
+  height: 70px;
+  padding: 5px 15px 5px 10px;
 
   position: static;
 }
@@ -23,6 +23,7 @@
 
 .header .nav-links li a {
   color: black;
+  font-size: 25px;
 }
 
 /* main section */
@@ -32,12 +33,22 @@ main #banner {
   height: auto;
 }
 
+.whatsapp-logo a {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 65px;
+  color: green;
+  /* z-index: ; */
+}
+
 .section-cards {
-  
+  margin: 40px 10px ;
   text-align: center;
+  height: auto;
 }
 .content-card {
-  margin-top: 20px;
+  margin: 20px ;
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -45,54 +56,76 @@ main #banner {
 
 .card {
   display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 135px;
-  border:  solid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height:480px;
+  width: 290px;
+  border:  1.5px solid;
 
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 15px;
+  /* max-width: 300px;
+  max-height: 300px; */
   background-color: #7a9a9b;
+  border-radius: 15px;
 }
 
 .card img {
-  flex-grow: 1;
+  width: 250px;
+  /* flex-grow: 1; */
   margin: 3px;
   border-radius: 14px 14px 0px 0px;
 }
 
 .card footer {
   margin-top: 3px;
-  flex-grow: 4;
+  /* flex-grow: 4; */
 }
 
 .card a {
   margin-top: 101px
 }
 
-/* section-atumm*/
+/* photo-gallery*/
 
-.section-autumm {
+.photo-gallery {
+  height: 100vh;
+
   display: flex;
-  margin-top: 30px;
-  padding: 20px;
-  height: 100vw;
-  max-height: 100vw;
-  background-color: rgb(34, 36, 35);
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: rgb(120,120,120);
 }
 
-.section-autumm .left-part {
-  width: 400px;
+.photo-gallery .photo img{
   height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-.section-autumm  img {
-  width: 240px;
+.photo {
+  display: flex;
+  gap: 20px;
+}
+
+/* contact-us */
+ 
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-us form {
+  padding: 300px;
+  border: 1px solid black;
 }
 
 
-/* section-footer*/
+/* footer*/
 
 .footer {
   background-color: black;
@@ -119,8 +152,9 @@ main #banner {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 25px;
 }
