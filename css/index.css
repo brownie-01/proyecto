@@ -88,7 +88,7 @@ main #banner {
 /* photo-gallery*/
 
 .photo-gallery {
-  height: 100vh;
+  height: 110vh;
 
   display: flex;
   flex-direction: column;
@@ -110,20 +110,29 @@ main #banner {
   gap: 20px;
 }
 
-/* contact-us */
+/* registration-form */
  
-.contact-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.registration-form  {
+  text-align: center;
+  border: 1px solid #7a9a9b;
+  margin: 1em 30em;
+  background-color: rgb(205,205,205);
   height: 100vh;
 }
 
-.contact-us form {
-  padding: 300px;
-  border: 1px solid black;
+.registration-form  p {
+  padding-bottom: 1em;
 }
 
+form {
+  text-align: left;
+  padding: 10px;
+}
+
+#list-checkbox {
+  list-style-type: none;
+
+}
 
 /* footer*/
 

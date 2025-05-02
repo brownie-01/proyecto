@@ -59,6 +59,7 @@
         <br>
         
         <section class="photo-gallery">
+            <h2>Coleccion de otoño</h2>
             <div class="photo">
                 <img src="/img/otoño1.avif" alt="">
                 <img src="/img/otoño2.avif" alt="">
@@ -74,12 +75,60 @@
             </div>
         </section>
 
-        <section class="contact-us">
+        <section class="registration-form">
+            <h2>Formulario</h2>
             <form action="">
                 <p>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name" required>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="user_name" required placeholder="Ingrese su nombre">
                 </p>
+                <p>
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" placeholder="ingrese su Email" required>
+                </p>
+                <p>
+                    <label for="phone">Telefono</label>
+                    <input type="" id="phone" placeholder="+54 11 1234-1234" required>
+                </p>
+                <p>
+                    <label for="comentarios">comentario</label>
+                    <textarea name="comentarios" id="comentarios" placeholder="Ingrese su comentario"></textarea>
+                </p>
+                <p>
+                    <label for="sexo">sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="">¿Por cual medio conociste nuestra pagina? Pueden ser varios!</label>
+                    <ul id="list-checkbox">
+                        <li>
+                            <input type="checkbox" name="" value="" id="un-amigo">
+                            <label for="un-amigo">Un amigo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" value="" id="casulidad">
+                            <label for="casulidad">Casulidad</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" value="" id="publicidad">
+                            <label for="publicidad">Publicidad</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" value="" id="redes-sociales">
+                            <label for="redes-sociales">Redes sociales</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" value="" id="otro">
+                            <label for="otro">Otro</label>
+                        </li>
+                    </ul>
+                </p>
+                <button type="submit">Enviar </button>
+                <input type="reset" value="Borrar">
             </form>
         </section>
     </main>
