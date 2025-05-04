@@ -39,7 +39,6 @@ main #banner {
   right: 30px;
   font-size: 65px;
   color: green;
-  /* z-index: ; */
 }
 
 .section-cards {
@@ -63,22 +62,19 @@ main #banner {
   width: 290px;
   border:  1.5px solid;
 
-  /* max-width: 300px;
-  max-height: 300px; */
   background-color: #7a9a9b;
   border-radius: 15px;
 }
 
 .card img {
   width: 250px;
-  /* flex-grow: 1; */
+
   margin: 3px;
   border-radius: 14px 14px 0px 0px;
 }
 
 .card footer {
   margin-top: 3px;
-  /* flex-grow: 4; */
 }
 
 .card a {
@@ -132,6 +128,11 @@ form {
 #list-checkbox {
   list-style-type: none;
 
+}
+
+#comentarios {
+  width: 20rem;
+  height: 12rem;
 }
 
 /* footer*/
