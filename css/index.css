@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #F2F2F2;
+}
+
 /* header section */
 .header {
   display: flex;
@@ -26,6 +31,10 @@
   font-size: 25px;
 }
 
+.icon-flex{
+  display: flex;
+}
+
 /* main section */
 
 main #banner {
@@ -45,6 +54,7 @@ main #banner {
   margin: 40px 10px ;
   text-align: center;
   height: auto;
+  background-color: #F2F2F2;
 }
 .content-card {
   margin: 20px ;
@@ -62,7 +72,7 @@ main #banner {
   width: 290px;
   border:  1.5px solid;
 
-  background-color: #7a9a9b;
+  background-color: #65BFAF;
   border-radius: 15px;
 }
 
@@ -138,7 +148,7 @@ form {
 /* footer*/
 
 .footer {
-  background-color: black;
+  background-color: #0D0D0D;
   color: beige;
   height: 300px;
 }
