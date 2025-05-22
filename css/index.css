@@ -13,40 +13,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
-  height: 70px;
-  padding: 5px 15px 5px 10px;
-
-  position: static;
+  height: 4rem;
+  padding: 1rem;
 }
 
 .header .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
 }
+
 
 .header .nav-links li a {
   color: black;
-  font-size: 25px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 1rem;
 }
 
 .icon-flex{
   display: flex;
+  align-items: center;
+}
+
+/*Esto funcion como un condicional si la pantalla tiene como minimo 600px y como maximo 1200px se aplica la propiedad*/
+@media
+(min-width: 600px) and (max-width: 1200px){
+  body { background-color: #65BFAF;
+    
+  }
 }
 
 /* main section */
 
 main #banner {
   width: 100%;
-  height: auto;
 }
 
 .whatsapp-logo a {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  font-size: 65px;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
   color: green;
 }
 
