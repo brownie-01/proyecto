@@ -9,6 +9,8 @@ body {
 }
 
 /* header section */
+/* DUDAS :) */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,14 +35,6 @@ body {
 .icon-flex{
   display: flex;
   align-items: center;
-}
-
-/*Esto funcion como un condicional si la pantalla tiene como minimo 600px y como maximo 1200px se aplica la propiedad*/
-@media
-(min-width: 600px) and (max-width: 1200px){
-  body { background-color: #65BFAF;
-    
-  }
 }
 
 /* main section */
@@ -185,3 +179,12 @@ form {
   padding-bottom: 20px;
   font-size: 25px;
 }
+
+
+/*Esto funcion como un condicional si la pantalla tiene como minimo 600px y como maximo 1200px se aplica la propiedad*/
+@media(max-width: 1024px) {
+  body {
+    background-color: aqua;
+  }
+}
+
