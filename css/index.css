@@ -2,60 +2,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
-body {
-  background-color: #F2F2F2;
-}
-
 /* header section */
-/* DUDAS :) */
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
-  padding: 1rem;
+  padding: 0.6rem;
+  position: static;
+  
 }
 
 .header .nav-links {
   list-style: none;
   display: flex;
+  gap: 15px;
 }
-
 
 .header .nav-links li a {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-decoration: none;
-  padding: 0rem 0rem 0rem 1rem;
+  transition: all 1s;
 }
 
-.icon-flex{
-  display: flex;
-  align-items: center;
+#a-animation:hover {
+  color: #007A78;
+  font-size: 1.7rem;
+  transition: all 0.5s;
 }
+
 
 /* main section */
+main {
+}
 
 main #banner {
   width: 100%;
+  height: auto;
 }
 
 .whatsapp-logo a {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 1.4rem;
   right: 2rem;
   font-size: 4rem;
   color: green;
 }
 
 .section-cards {
-  margin: 40px 10px ;
+  margin: 2rem 2rem ;
   text-align: center;
-  height: auto;
-  background-color: #F2F2F2;
 }
 .content-card {
   margin: 20px ;
@@ -65,31 +63,14 @@ main #banner {
 }
 
 .card {
+  height: 200px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  height:480px;
-  width: 290px;
-  border:  1.5px solid;
-
-  background-color: #65BFAF;
-  border-radius: 15px;
+  flex-wrap: nowrap;
 }
 
 .card img {
-  width: 250px;
-
-  margin: 3px;
-  border-radius: 14px 14px 0px 0px;
-}
-
-.card footer {
-  margin-top: 3px;
-}
-
-.card a {
-  margin-top: 101px
+  width: 100%;
+  display: block;
 }
 
 /* photo-gallery*/
@@ -121,7 +102,7 @@ main #banner {
  
 .registration-form  {
   text-align: center;
-  border: 1px solid #7a9a9b;
+  border: 1px solid black;
   margin: 1em 30em;
   background-color: rgb(205,205,205);
   height: 100vh;
@@ -149,7 +130,7 @@ form {
 /* footer*/
 
 .footer {
-  background-color: #0D0D0D;
+  background-color: black;
   color: beige;
   height: 300px;
 }
@@ -180,11 +161,9 @@ form {
   font-size: 25px;
 }
 
+/*Media que*/
 
-/*Esto funcion como un condicional si la pantalla tiene como minimo 600px y como maximo 1200px se aplica la propiedad*/
-@media(max-width: 1024px) {
-  body {
-    background-color: aqua;
-  }
+@media(max-width: 768px){
+
 }
 

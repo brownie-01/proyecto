@@ -11,34 +11,28 @@ h2 {
   font-weight: 400;
   font-style: normal;
   text-decoration-line: underline;
-  font-size: 30px;
 }
 
 h3 {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
 }
 
 h4 {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 10px;
 }
 
 p {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
 }
 
 .p-opacity {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  opacity: 0.7;
 }
