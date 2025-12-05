@@ -3,16 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  /* quiero ver la forma de que se pinte de arriba hacia abajo */
+  transition: all 0.8s ease;
+}
+
+.darkMode {
+  background-color: black;
+  color: #ccc;
+}
+
+
 /* header section */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid;
-  height: 70px;
-  padding: 5px 15px 5px 10px;
-
+  padding-block: 0.2rem;
+  padding-inline: 0.2rem;
   position: static;
+}
+
+.contenedorIconos {
+  /* display: none; */
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
 }
 
 .header .nav-links {
@@ -26,31 +44,40 @@
   font-size: 25px;
 }
 
+body.darkMode .nav-links li a {
+  color: #ffffff;
+}
+
 /* main section */
 
-main #banner {
+img {  
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .whatsapp-logo a {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  font-size: 65px;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 4rem;
   color: green;
 }
 
 .section-cards {
-  margin: 40px 10px ;
-  text-align: center;
-  height: auto;
-}
-.content-card {
-  margin: 20px ;
   display: flex;
-  justify-content: center;
-  gap: 14px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* seccion de cards */
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #7a9a9b;
 }
 
 .card {
@@ -58,52 +85,64 @@ main #banner {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height:480px;
-  width: 290px;
   border:  1.5px solid;
 
   background-color: #7a9a9b;
-  border-radius: 15px;
-}
-
-.card img {
-  width: 250px;
-
-  margin: 3px;
-  border-radius: 14px 14px 0px 0px;
-}
-
-.card footer {
-  margin-top: 3px;
 }
 
 .card a {
   margin-top: 101px
 }
 
+/* categorias section */
+
+.categorias{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.globo-categoria{
+  height: 8rem;
+  width: 8rem;
+  background-color: #ccc;
+  border-radius: 2rem;
+  text-align: center;
+  align-content: center;
+}
+
+
+
+
 /* photo-gallery*/
 
 .photo-gallery {
-  height: 110vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 40px;
-  background-color: rgb(120,120,120);
-}
 
-.photo-gallery .photo img{
-  height: auto;
-  width: auto;
-  max-width: 300px;
-  max-height: 300px;
+  width: 100%;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 2rem;
 }
 
 .photo {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+}
+
+/* muy bueno esto! */
+.photoHover {
+  transition: all 0.5s ease;  
+}
+
+.photoHover:hover {
+  transform: scale(1.1);
 }
 
 /* registration-form */
@@ -111,9 +150,8 @@ main #banner {
 .registration-form  {
   text-align: center;
   border: 1px solid #7a9a9b;
-  margin: 1em 30em;
-  background-color: rgb(205,205,205);
-  height: 100vh;
+  background-color: rgb(48, 9, 9);
+
 }
 
 .registration-form  p {
@@ -122,7 +160,6 @@ main #banner {
 
 form {
   text-align: left;
-  padding: 10px;
 }
 
 #list-checkbox {
@@ -136,7 +173,6 @@ form {
 }
 
 /* footer*/
-
 .footer {
   background-color: black;
   color: beige;
@@ -168,3 +204,4 @@ form {
   padding-bottom: 20px;
   font-size: 25px;
 }
+
