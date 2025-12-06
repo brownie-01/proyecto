@@ -1,0 +1,8 @@
+https://color.adobe.com/es/search?q=black%20and%20white
+
+    Gama de colores para pagina
+ { color: rgba(242, 242, 242, 1); }
+ { color: rgba(191, 191, 191, 1); }
+ { color: rgba(114, 114, 114, 1); }
+ { color: rgba(38, 38, 38, 1); }
+ { color: rgba(12, 12, 12, 1); } 

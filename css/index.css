@@ -7,6 +7,7 @@
 body {
   /* quiero ver la forma de que se pinte de arriba hacia abajo */
   transition: all 0.8s ease;
+  /* background-color: rgba(242, 242, 242, 1); */
 }
 
 .darkMode {
@@ -27,10 +28,19 @@ body {
 }
 
 .contenedorIconos {
-  /* display: none; */
   position: fixed;
-  bottom: 50px;
+  bottom: 0;
   background-color: white;
+  z-index: 2;
+  width: 100%;
+  padding: 0.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .header .nav-links {
@@ -62,6 +72,8 @@ img {
   right: 2rem;
   font-size: 4rem;
   color: green;
+  /* despues ponelo en el 1024 */
+  display: none;
 }
 
 .section-cards {
@@ -71,50 +83,54 @@ img {
   width: 100%;
 }
 
-/* seccion de cards */
+  /* seccion de cards */
 
+/* vamos a hacer esta seccion teniendo en concideracion el modelo width: 375px height: 667 */
 .content-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: #7a9a9b;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
 
 .card {
+  width: 45%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  border:  1.5px solid;
-
-  background-color: #7a9a9b;
 }
 
-.card a {
-  margin-top: 101px
+.footer-card{
+  text-align: center;
 }
 
 /* categorias section */
 
-.categorias{
+.container-categorias {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10rem;
+  align-items: stretch;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
-.globo-categoria{
-  height: 8rem;
-  width: 8rem;
-  background-color: #ccc;
-  border-radius: 2rem;
-  text-align: center;
-  align-content: center;
+.globo-categoria {
+  width: calc(50% - 0.25rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 2rem 0rem;
+  background-color: rgba(242, 242, 242, 1);
+  border: 1px #ccc solid;
+  border-radius: 1rem;
 }
 
-
-
+.globo-categoria i {
+  font-size: 1.6rem;
+}
 
 /* photo-gallery*/
 
@@ -126,8 +142,6 @@ img {
 
   width: 100%;
   gap: 1rem;
-  margin: 1rem;
-  padding: 2rem;
 }
 
 .photo {
@@ -168,7 +182,7 @@ form {
 }
 
 #comentarios {
-  width: 20rem;
+  width: 2rem;
   height: 12rem;
 }
 
@@ -204,4 +218,14 @@ form {
   padding-bottom: 20px;
   font-size: 25px;
 }
+.social-icons > li:first-child {
+  color:rgb(48, 9, 9)
+}
 
+.social-icons > li:nth-child(2) {
+  color: blue;
+}
+
+.social-icons > li:last-child{
+  color: blue;
+}
