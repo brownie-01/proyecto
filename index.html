@@ -6,6 +6,7 @@
     <title>Topebags</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/056e88abcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header class="header">
@@ -14,11 +15,11 @@
         </div>
         <div class="contenedorIconos">
             <ul class="nav-links">
-                <i id="cambiarColor" class="fa-solid fa-toggle-off"></i>
-                <li><a aria-label="volver a inicio" href=""><i class="fa-solid fa-house"></i></a></li>
-                <li><a aria-label="Perfil de usuario" href=""><i class="fa-solid fa-circle-user"></i></a></li>
-                <li><a aria-label="Carrito de usuario" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a aria-label="Menu de usuario" href=""><i class="fa-solid fa-bars"></i></a></li>
+                <i id="cambiarColor" class="fa-solid fa-toggle-off feedBackTactil"></i>
+                <li><a aria-label="volver a inicio" href=""><i class="fa-solid fa-house feedBackTactil"></i></a></li>
+                <li><a aria-label="Perfil de usuario" href=""><i class="fa-solid fa-circle-user feedBackTactil"></i></a></li>
+                <li><a aria-label="Carrito de usuario" href=""><i class="fa-solid fa-cart-shopping feedBackTactil"></i></a></li>
+                <li><a aria-label="Menu de usuario" href=""><i class="fa-solid fa-bars feedBackTactil"></i></a></li>
             </ul>
         </div>
     </header>    
@@ -106,81 +107,29 @@
 
         <br>
         
-        <section class="photo-gallery">
-            <h2>Coleccion de otoño</h2>
-            <div class="photo">
-                <img class=" img photoHover" src="img/otoño1.avif" alt="carteras de otoño">
-                <img class=" img photoHover" src="img/otoño2.avif" alt="">
-                <img class=" img photoHover" src="img/otoño3.avif" alt="">
-                <img class=" img photoHover" src="img/otoño4.avif" alt="">
-                <img class=" img photoHover" src="img/otoño5.avif" alt="">
-            </div>
-            <div class="photo">
-                <img class=" img photo" src="img/otoño6h.avif" alt="">
-                <img class="img photo" src="img/otoño7h.avif" alt="">
-                <img class=" img photo" src="img/otoño8h.avif" alt="">
-                
-            </div>
+        <section class="seccionServicion">
+            
         </section>
 
-        <section class="formularioSubscrpcion">
+        <section class="formularioSubscripcion">
             <h2>Recibí nuestras novedades</h2>
 
             <div class="containerFormulario">
                 <h2>Formulario</h2>
-            <form action="">
-                <p>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="user_name" required placeholder="Ingrese su nombre">
-                </p>
-                <p>
-                    <label for="Email">Email</label>
-                    <input type="email" id="Email" placeholder="ingrese su Email" required>
-                </p>
-                <p>
-                    <label for="phone">Telefono</label>
-                    <input type="" id="phone" placeholder="+54 11 1234-1234" required>
-                </p>
-                <p>
-                    <label for="comentarios">comentario</label>
-                    <textarea name="comentarios" id="comentarios" placeholder="Ingrese su comentario"></textarea>
-                </p>
-                <p>
-                    <label for="sexo">sexo</label>
-                    <select name="sexo" id="sexo">
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="">¿Por cual medio conociste nuestra pagina? Pueden ser varios!</label>
-                    <ul id="list-checkbox">
-                        <li>
-                            <input type="checkbox" name="" value="" id="un-amigo">
-                            <label for="un-amigo">Un amigo</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" value="" id="casulidad">
-                            <label for="casulidad">Casulidad</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" value="" id="publicidad">
-                            <label for="publicidad">Publicidad</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" value="" id="redes-sociales">
-                            <label for="redes-sociales">Redes sociales</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" value="" id="otro">
-                            <label for="otro">Otro</label>
-                        </li>
-                    </ul>
-                </p>
-                <button type="submit">Enviar </button>
-                <input type="reset" value="Borrar">
-            </form>
+                <form class="formulario" action="">
+                <div class="formularioItem">
+                    <label for="nombre"></label><br>
+                    <input type="text" id="nombre" name="user_name" required placeholder="Ingrese su nombre">
+                </div>
+                <div class="formularioItem">
+                    <label for="email"></label><br>
+                    <input type="email" id="email" placeholder="ingrese su Email" required>
+                </div>
+                <div class="formularioEnvio">
+                    <button type="submit">Enviar </button>
+                    <button type="reset">Borrar</button>
+                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -204,5 +153,6 @@
         </section>
     </footer>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
